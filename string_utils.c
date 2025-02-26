@@ -6,7 +6,7 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/25 23:26:40 by ravazque          #+#    #+#             */
-/*   Updated: 2025/02/26 18:51:30 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/02/26 19:47:44 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,6 @@ double	atodbl(const char *s, int *flag)
 	double	fractional_part;
 
 	sign = 1;
-	*flag = 0;
 	if (!skip_whitespace_and_signs(&s, &sign, flag))
 		return (0.0);
 	integer_part = parse_integer_part(&s, flag);

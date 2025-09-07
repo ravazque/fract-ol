@@ -4,11 +4,11 @@ CFLAGS = -Wall -Wextra -Werror -g3
 
 NAME = fractol
 
-VPATH = libft:
+VPATH = libft_fractol:src:
 
 OBJ_DIR = objects
 
-MLX_DIR = minilibx-linux
+MLX_DIR = src/minilibx-linux
 MLX_LIB = $(MLX_DIR)/libmlx_Linux.a
 MLX_FLAGS = -L$(MLX_DIR) -lmlx -lXext -lX11
 

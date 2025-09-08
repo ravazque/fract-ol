@@ -74,7 +74,7 @@ These functions are essential for implementing **fract-ol**, as they enable grap
 </details>
 
 <details>
-<summary><strong>Fr4actals & Interactions</strong></summary>
+<summary><strong>Fractals & Interactions</strong></summary>
 
 ### Supported Fractals
 
@@ -141,12 +141,16 @@ fract-ol/
 ├──┬ include/
 │  └── fractol.h                        # Header file with structures and prototypes
 ├──┬ src/
-│  ├── main.c                           # Main program and argument parsing
-│  ├── fractals.c                       # Fractal calculation algorithms (Mandelbrot, Julia)
-│  ├── render.c                         # Pixel rendering and image manipulation
-│  ├── events.c                         # Keyboard and mouse event handlers
-│  ├── utils.c                          # Utility functions (colors, coordinates)
-│  └── init.c                           # Initialization and cleanup functions
+│  ├──┬ libft_fractol/                  # Custom libft implementation for fractol project
+│  │  └── *.c
+│  ├──┬ minilibx-linux/                 # MiniLibX graphics library for Linux systems
+│  │  └── *.c
+│  ├── events.c                         # Keyboard and mouse event handlers for navigation
+│  ├── fractol.c                        # Main program and argument parsing for Mandelbrot/Julia
+│  ├── init.c                           # MiniLibX initialization and fractal data setup
+│  ├── math_utils.c                     # Complex number operations and coordinate mapping
+│  ├── render.c                         # Fractal rendering, pixel manipulation and color mapping
+│  └── string_utils.c                   # String parsing utilities for Julia parameters
 ├── Makefile                            # Compilation rules and MiniLibX linking
 └── README.md                           # Project documentation
 ```

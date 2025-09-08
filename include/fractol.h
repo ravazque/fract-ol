@@ -6,7 +6,7 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 17:05:28 by ravazque          #+#    #+#             */
-/*   Updated: 2025/09/07 21:19:31 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/09/08 16:33:31 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,9 +69,8 @@ typedef struct s_complex
 
 void		fractal_init(t_fractal *fractal);
 void		fractal_render(t_fractal *fractal);
-double		map1(double unscaled_num, double new_min, double new_max,
-				double old_min);
-double		map2(double old_min, double old_max);
+double		map1(double new_min, double old_min, double old_max);
+double		map2(double uns_num, double n_min, double n_max, double o_min);
 double		atodbl(const char *s, int *flag);
 int			close_handler(t_fractal *fractal);
 int			key_handler(int keysys, t_fractal *fractal);

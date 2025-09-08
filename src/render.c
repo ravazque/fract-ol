@@ -6,7 +6,7 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/23 19:12:14 by ravazque          #+#    #+#             */
-/*   Updated: 2025/09/07 18:18:03 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/09/08 16:41:04 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,18 +42,15 @@ static void	handle_pixel(int x, int y, t_fractal *fractal)
 	int			color;
 
 	i = 0;
-	z.x = ((map1(x, -2, +2, 0) / map2(0, HEIGHT) - 2) * fractal->zoom)
-		+ fractal->shift_x;
-	z.y = ((map1(y, +2, -2, 0) / map2(0, WIDTH) + 2) * fractal->zoom)
-		+ fractal->shift_y;
+	z.x = ((map2(x, -2, 2, 0) / map1(-2, 0, WIDTH)) * fractal->zoom) + fractal->shift_x;
+	z.y = ((map2(y, +2, -2, 0) / map1(+2, 0, HEIGHT)) * fractal->zoom) + fractal->shift_y;
 	man_vs_jul(&z, &c, fractal);
 	while (i < fractal->iterations_definition)
 	{
 		z = sum_complex(square_complex(z), c);
 		if ((z.x * z.x) + (z.y * z.y) > fractal->escape_value)
 		{
-			color = map1(i, BLACK, WHITE, 0) / map2(WHITE,
-					fractal->iterations_definition) - BLACK;
+			color = (map2(i, BLACK, WHITE, 0) / map1(BLACK, 0, fractal->iterations_definition));
 			my_pixel_put(x, y, &fractal->img, color);
 			return ;
 		}

@@ -6,7 +6,7 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 13:52:48 by ravazque          #+#    #+#             */
-/*   Updated: 2025/09/07 18:17:58 by ravazque         ###   ########.fr       */
+/*   Updated: 2025/09/08 16:56:31 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,13 +34,13 @@ void	data_init(t_fractal *fractal)
 	fractal->zoom = 1.0;
 	if (!ft_strncmp(fractal->name, ARG_MAN, 10))
 	{
-		fractal->shift_x -= (0.5 * fractal->zoom);
+		fractal->shift_x -= (2.5 * fractal->zoom);
 	}
 	else
 	{
-		fractal->shift_x = 0.0;
+		fractal->shift_x -= 2.0;
 	}
-	fractal->shift_y = 0.0;
+	fractal->shift_y = 2.0;
 }
 
 void	fractal_init(t_fractal *fractal)

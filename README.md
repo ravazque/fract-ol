@@ -1,6 +1,5 @@
-<p align="center">
-  <img src="https://github.com/ayogun/42-project-badges/raw/main/badges/fract-olm.png" alt="Fract-ol Badge" width="150" height="150">
-</p>
+
+# fract-ol
 
 ## 📖 About
 
@@ -172,7 +171,7 @@ The fract-ol project teaches computer graphics and mathematical visualization:
 
 ## ⚙️ Technical Specifications
 
-- **Language**: C (C99 standard)
+- **Language**: C (C90 standard)
 - **Compiler**: cc with flags `-Wall -Wextra -Werror`
 - **Graphics Library**: MiniLibX for window management and pixel manipulation
 - **Mathematics**: Complex number arithmetic and escape-time algorithms

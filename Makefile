@@ -1,6 +1,6 @@
 
 CC      = cc
-CFLAGS  = -Wall -Wextra -Werror -g3 -Iinclude -Isrc/libft_fractol/include -Isrc
+CFLAGS  = -Wall -Wextra -Werror -Iinclude -Isrc/libft_fractol/include -Isrc
 
 NAME    = fractol
 

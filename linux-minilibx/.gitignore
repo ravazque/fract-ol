@@ -10,8 +10,6 @@ Makefile.gen
 ## Other
 .DS_STORE
 
-
-
 ## Template from https://github.com/github/gitignore
 # Prerequisites
 *.d

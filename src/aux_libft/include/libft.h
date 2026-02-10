@@ -6,7 +6,7 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 20:31:32 by ravazque          #+#    #+#             */
-/*   Updated: 2025/09/08 16:26:35 by ravazque         ###   ########.fr       */
+/*   Updated: 2026/02/10 18:45:53 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 # include <X11/X.h>
 # include <X11/keysym.h>
 # include <math.h>
-# include "../../minilibx-linux/mlx.h"
+# include "../../../linux-minilibx/mlx.h"
 
 typedef struct s_list
 {

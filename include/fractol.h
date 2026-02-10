@@ -6,14 +6,14 @@
 /*   By: ravazque <ravazque@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 17:05:28 by ravazque          #+#    #+#             */
-/*   Updated: 2025/09/08 16:33:31 by ravazque         ###   ########.fr       */
+/*   Updated: 2026/02/10 18:46:24 by ravazque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FRACTOL_H
 # define FRACTOL_H
 
-# include "../src/libft_fractol/include/libft.h"
+# include "../src/aux_libft/include/libft.h"
 
 # define WIDTH 900
 # define HEIGHT 900

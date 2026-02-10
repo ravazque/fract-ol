@@ -1,3 +1,4 @@
+
 MAKEFLAGS += --no-print-directory
 
 NAME = libft.a
